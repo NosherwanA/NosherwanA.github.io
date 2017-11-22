@@ -10,6 +10,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+        
         <style>
             
             .jumbotron{
@@ -123,6 +128,16 @@
             padding: 8px 12px;
             position: absolute;
             top: 0;
+            }
+
+            #AccessDenied.body.modal-open{
+                color: rgb(5, 5, 5);
+            }
+            #AccessDenied.modal-body{
+                color: rgb(5, 5, 5);
+            }
+            #AccessDenied.modal-footer{
+                color: rgb(5, 5, 5);
             }
         </style>
 
@@ -304,7 +319,7 @@
                             <h2>Equation Solver</h2>
                         </div>
                         <div class="panel-body">
-                            <p>A VHDL component to detect 8 bit prime numbers. It uses the Miller Rabin Primality test using components from Finite Field Arithmeic.</p>
+                            <p>A C++ program that solves a system of equations with three variables using Crammer's rule</p>
                         </div>
                         <div class="panel-footer">
                             <a href="#" class="btn btn-primary">Link to GitHub Project</a>
@@ -318,7 +333,7 @@
                             <h2>Leap Mouse</h2>
                         </div>
                         <div class="panel-body">
-                            <p>A VHDL component to perform modular multplication and exponentiation. It uses a Wallace Tree Multiplier and reduction and mod function from math library.</p>
+                            <p>A Python project that imitates the functionality of a mouse using hand gestures and Leap Motion Controller </p>
                         </div>
                         <div class="panel-footer">
                             <a href="#" class="btn btn-primary">Link to GitHub Project</a>
@@ -334,7 +349,7 @@
                             <h2>2048</h2>
                         </div>
                         <div class="panel-body">
-                            <p>An 8-bit RSA engine encryptor and decryptor</p>
+                            <p>A take on the famous 2048 mobile game using Java</p>
                         </div>
                         <div class="panel-footer">
                             <a href="#" class="btn btn-primary">Link to GitHub Project</a>
@@ -348,7 +363,7 @@
                             <h2>Webscraper</h2>
                         </div>
                         <div class="panel-body">
-                            <p>A Moore State Machine modeling traffic lights at an intersection using multiple clock networks and input sensors</p>
+                            <p>A script that gathers a list of movies currenly playing nearby based off of genre and ratings; using Python and Selenium</p>
                         </div>
                         <div class="panel-footer">
                             <a href="#" class="btn btn-primary">Link to GitHub Project</a>
@@ -361,13 +376,13 @@
                 <div class="col col-lg-6 col-md-6">
                     <div class="panel panel-primary text-center">
                         <div class="panel-heading">
-                            <h2>PYTHON SCripting Mattermsot</h2>
+                            <h2>Mattermost</h2>
                         </div>
                         <div class="panel-body">
-                            <p>A VHDL project to monitor and control electrical appliances based on various settings set by the user and magnitude comparator</p>
+                            <p>A collection of scripts interacting with Mattermost API to create new teams, adding members, conducting daily standups and much more using Python and Docker containers</p>
                         </div>
                         <div class="panel-footer">
-                            <a href="#" class="btn btn-primary">Link to GitHub Project</a>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#AccessDenied">Link to GitHub Project</button>
                         </div>  
                     </div>
                 </div>
@@ -375,19 +390,20 @@
                 <div class="col col-lg-6 col-md-6">
                     <div class="panel panel-primary text-center">
                         <div class="panel-heading">
-                            <h2>Jenkins Groovy Scripts</h2>
+                            <h2>Jenkins</h2>
                         </div>
                         <div class="panel-body">
-                            <p>A Moore State Machine that chases a target number set by the user</p>
+                            <p>A collection of Groovy scrips defining pipelines for Jenkins using Artifactory, SonarQube, MSBuild and GitLab plugins</p>
                         </div>
                         <div class="panel-footer">
-                            <a href="#" class="btn btn-primary">Link to GitHub Project</a>
+                            <a data-toggle="modal" href="#AccessDenied" class="btn btn-primary">Link to GitHub Project</a>
                         </div>  
                     </div>
                 </div>
             </div>
         </div>
-
+        
+        <!-- Pop-up slideshow for Flood Sensor 
         <div id="myModal" class="modal">
             
             <div class="modal-content">
@@ -414,9 +430,34 @@
         
             </div>
         </div>
-        
+
+        -->
+
+        <!-- Modal Pop-up for Mattermost and Jenkins -->
+        <div class="modal" id="AccessDenied" role="dialog">
+            <div class="modal-dialog">
+                <!-- Content -->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Not Available</h4>
+                    </div>
+
+                    <div class="modal-body">
+                        <p>Sorry. This is not available to view publically. Please contact the author</p>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+        -->
         <script>
             function openModal() {
                 document.getElementById('myModal').style.display = "block";
@@ -427,7 +468,7 @@
             }
             
             var slideIndex = 1;
-            showSlides(slideIndex);
+                showSlides(slideIndex);
             
             function plusSlides(n) {
                 showSlides(slideIndex += n);
