@@ -11,10 +11,6 @@
         
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-        
         <style>
             
             .jumbotron{
@@ -45,7 +41,7 @@
             .panel{
                 background-color: #16163680
             }
-
+            
             /* The Modal (background) */
             .modal {
             display: none;
@@ -64,6 +60,7 @@
             .modal-content {
             position: relative;
             background-color: #fefefe;
+            color: black;
             margin: auto;
             padding: 0;
             width: 90%;
@@ -72,7 +69,7 @@
 
             /* The Close Button */
             .close {
-            color: rgb(255, 0, 0);
+            color: rgb(0, 0, 0);
             position: absolute;
             top: 10px;
             right: 25px;
@@ -87,10 +84,6 @@
             cursor: pointer;
             }
 
-            .mySlides {
-            display: none;
-            }
-
             /* Next & previous buttons */
             .prev,
             .next {
@@ -100,7 +93,7 @@
             width: auto;
             padding: 16px;
             margin-top: -50px;
-            color: rgb(255, 0, 0);
+            color: rgba(0, 0, 0, 0);
             font-weight: bold;
             font-size: 20px;
             transition: 0.6s ease;
@@ -118,26 +111,7 @@
             /* On hover, add a black background color with a little bit see-through */
             .prev:hover,
             .next:hover {
-            background-color: rgba(0, 0, 0, 0.8);
-            }
-
-            /* Number text (1/3 etc) */
-            .numbertext {
-            color: rgb(255, 0, 0);
-            font-size: 12px;
-            padding: 8px 12px;
-            position: absolute;
-            top: 0;
-            }
-
-            #AccessDenied.body.modal-open{
-                color: rgb(5, 5, 5);
-            }
-            #AccessDenied.modal-body{
-                color: rgb(5, 5, 5);
-            }
-            #AccessDenied.modal-footer{
-                color: rgb(5, 5, 5);
+            background-color: rgba(0, 0, 0, 0);
             }
         </style>
 
@@ -179,7 +153,7 @@
 
         </div>
 
-        <div class="container">
+        <div class="container" id="details">
             <div class="row text-center">
                 <h1>Hardware</h1>
             </div>
@@ -284,7 +258,7 @@
                             <p>Prototyping a flood sensor circuit on a breadboard and designing a PCB for the circuit</p>
                         </div>
                         <div class="panel-footer">
-                            <a href="#" class="btn btn-primary">Link to GitHub Project</a>
+                            <a href="#" class="btn btn-primary"onclick="openModal();currentSlide(1)">Link to Slideshow</a>
                         </div>  
                     </div>
                 </div>
@@ -298,7 +272,7 @@
                             <p>Using a FPGA and an external circuit involving IR sensor, IR LED and ADC to simulate a televison remote </p>
                         </div>
                         <div class="panel-footer">
-                            <a href="#" class="btn btn-primary" onclick="openModal();currentSlide(1)">Under Development</a>
+                            <a href="#" class="btn btn-primary disabled">Under Development</a>
                         </div>  
                     </div>
                 </div>
@@ -333,7 +307,7 @@
                             <h2>Leap Mouse</h2>
                         </div>
                         <div class="panel-body">
-                            <p>A Python project that imitates the functionality of a mouse using hand gestures and Leap Motion Controller </p>
+                            <p>A Python project that imitates the functionality of a mouse using hand gestures and utilizing Leap Motion Controller </p>
                         </div>
                         <div class="panel-footer">
                             <a href="#" class="btn btn-primary">Link to GitHub Project</a>
@@ -382,7 +356,7 @@
                             <p>A collection of scripts interacting with Mattermost API to create new teams, adding members, conducting daily standups and much more using Python and Docker containers</p>
                         </div>
                         <div class="panel-footer">
-                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#AccessDenied">Link to GitHub Project</button>
+                            <a href="#" class="btn btn-primary" data-toggle="modal" onclick="openAD();">Link to GitHub Project</a>
                         </div>  
                     </div>
                 </div>
@@ -396,42 +370,42 @@
                             <p>A collection of Groovy scrips defining pipelines for Jenkins using Artifactory, SonarQube, MSBuild and GitLab plugins</p>
                         </div>
                         <div class="panel-footer">
-                            <a data-toggle="modal" href="#AccessDenied" class="btn btn-primary">Link to GitHub Project</a>
+                            <a data-toggle="modal" href="#" class="btn btn-primary" onclick="openAD();">Link to GitHub Project</a>
                         </div>  
                     </div>
                 </div>
             </div>
         </div>
         
-        <!-- Pop-up slideshow for Flood Sensor 
+        <!-- Pop-up slideshow for Flood Sensor -->
         <div id="myModal" class="modal">
             
             <div class="modal-content">
                     
                 <span class="close cursor" onclick="closeModal()">&times;</span>
                 <div class="mySlides">
-                    <img src="img/Background2.png" style="width:100%">
+                    <img src="img/Flood_Sensor_1.jpg" style="width:100%">
                 </div>
             
                 <div class="mySlides">
-                    <img src="img/ece_uw.png" style="width:100%">
+                    <img src="img/Flood_Sensor_2.jpg" style="width:100%">
                 </div>
             
                 <div class="mySlides">
-                    <img src="img/hardware-pc7.jpg" style="width:100%">
+                    <img src="img/Flood_Sensor_3.jpg" style="width:100%">
                 </div>
-            
+                <!--
                 <div class="mySlides">
                     <img src="img/Me.jpg" style="width:100%">
                 </div>
-            
+                -->
                 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                 <a class="next" onclick="plusSlides(1)">&#10095;</a>
         
             </div>
         </div>
 
-        -->
+        
 
         <!-- Modal Pop-up for Mattermost and Jenkins -->
         <div class="modal" id="AccessDenied" role="dialog">
@@ -439,7 +413,7 @@
                 <!-- Content -->
                 <div class="modal-content">
                     <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <button type="button" class="close" data-dismiss="modal" onclick="closeAD();">&times;</button>
                         <h4 class="modal-title">Not Available</h4>
                     </div>
 
@@ -448,17 +422,25 @@
                     </div>
 
                     <div class="modal-footer">
-                        <button class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button class="btn btn-default" data-dismiss="modal" onclick="closeAD();">Close</button>
                     </div>
                 </div>
             </div>
         </div>
-        <!--
+        
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         
-        -->
+    
         <script>
+
+            function openAD() {
+                document.getElementById('AccessDenied').style.display = "block";
+            }
+            function closeAD() {
+                document.getElementById('AccessDenied').style.display = "none";
+            }
+
             function openModal() {
                 document.getElementById('myModal').style.display = "block";
             }
