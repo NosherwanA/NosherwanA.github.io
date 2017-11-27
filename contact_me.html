@@ -51,16 +51,20 @@
                 color: white;
             }
             .btn-git{
-                background-color: #333;
+                background-color: #444;
                 color: white;
             }
-            .btn-slack{
-                background-color: #3eb991;
+            .btn-git:focus, .btn-git:hover {
+                background-color: #2b2b2b;
                 color: white;
             }
             .btn-email{
                 background-color: #4B515D;
                 color : white;
+            }
+            .btn-email:focus, .btn-email:hover {
+                background-color: rgb(54, 57, 63);
+                color: white;
             }
             
         </style>
@@ -104,12 +108,14 @@
 
         </div>
 
-        <div class="container">
-            <button type="button" class="btn btn-fb "><i class="fa fa-facebook left"></i> Facebook</button>
-            <button type="button" class="btn btn-li"><i class="fa fa-linkedin left"></i> Linkedin</button>
-            <button type="button" class="btn btn-git"><i class="fa fa-github left"></i> Github</button>
-            <button type="button" class="btn btn-email"><i class="fa fa-envelope left"></i> Email</button>
-            <button type="button" class="btn btn-slack"><i class="fa fa-slack left"></i> Slack</button>
+        <div class="container text-center">
+            <!--
+            <a href="https://twitter.com/NosherwanAhmed2" target="_blank" class="btn btn-tw"><i class="fa fa-twitter left"></i> Twitter</a>
+            -->
+            <a href="https://www.linkedin.com/in/NosherwanA" class="btn btn-li"><i class="fa fa-linkedin left"></i> Linkedin</a>
+            <a href="https://github.com/NosherwanA" class="btn btn-git"><i class="fa fa-github left"></i> Github</a>
+            <a href="mailto:nosherwan.a2@gmail.com" class="btn btn-email"><i class="fa fa-envelope left"></i> Email</a>
+
         </div>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
