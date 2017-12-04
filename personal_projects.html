@@ -26,10 +26,7 @@
                 color: white;
             }
 
-            .tab-content{
-                border-left: 1px solid #ddd;
-                border-right: 1px solid #ddd;
-                border-bottom: 1px solid #ddd;
+            .tab-content{ 
                 padding: 10px
             }
             
@@ -113,6 +110,8 @@
             .next:hover {
             background-color: rgba(0, 0, 0, 0);
             }
+
+            .center-pills { display: inline-block; }
         </style>
 
     </head>
@@ -153,216 +152,215 @@
 
         </div>
 
-        <div class="container" id="details">
-            <div class="row text-center">
-                <h1>Hardware</h1>
+        <div class="container text-center">
+            <ul class="nav nav-pills center-pills">
+                <li class="active"><a data-toggle="pill" href="#Hardware"><h4>Hardware</h4></a></li>
+                <li><a data-toggle="pill" href="#Software"><h4>Software</h4></a></li>
+            </ul>
+            <div class="tab-content">
+                <div id="Hardware" class="tab-pane fade in active">
+                    <div class="row">
+                        <div class="panel panel-primary text-center">
+                            <div class="panel-heading">
+                                <h2>Prime Number Detection</h2>
+                            </div>
+                            <div class="panel-body">
+                                <p>A VHDL component to detect 8 bit prime numbers. It uses the Miller Rabin Primality test using components from Finite Field Arithmeic.</p>
+                            </div>
+                            <div class="panel-footer">
+                                <a href="#" class="btn btn-primary">Link to GitHub Project</a>
+                            </div>  
+                        </div>
+                    </div>
+                    <br> <br>
+                    <div class="row">
+                        <div class="panel panel-primary text-center">
+                            <div class="panel-heading">
+                                <h2>Finite Field Arithmetic</h2>
+                            </div>
+                            <div class="panel-body">
+                                <p>A VHDL component to perform modular multplication and exponentiation. It uses a Wallace Tree Multiplier and reduction and mod function from math library.</p>
+                            </div>
+                            <div class="panel-footer">
+                                <a href="#" class="btn btn-primary">Link to GitHub Project</a>
+                            </div>  
+                        </div>
+                    </div>
+                    <br> <br>
+                    <div class="row">
+                        <div class="panel panel-primary text-center">
+                            <div class="panel-heading">
+                                <h2>RSA Engine</h2>
+                            </div>
+                            <div class="panel-body">
+                                <p>An 8-bit RSA engine encryptor and decryptor</p>
+                            </div>
+                            <div class="panel-footer">
+                                <a href="#" class="btn btn-primary">Link to GitHub Project</a>
+                            </div>  
+                        </div>
+                    </div>
+                    <br> <br>
+                    <div class="row">
+                        <div class="panel panel-primary text-center">
+                            <div class="panel-heading">
+                                <h2>Traffic Light Controller</h2>
+                            </div>
+                            <div class="panel-body">
+                                <p>A Moore State Machine modeling traffic lights at an intersection using multiple clock networks and input sensors</p>
+                            </div>
+                            <div class="panel-footer">
+                                <a href="#" class="btn btn-primary">Link to GitHub Project</a>
+                            </div>  
+                        </div>
+                    </div>
+                    <br> <br>
+                    <div class="row">
+                        <div class="panel panel-primary text-center">
+                            <div class="panel-heading">
+                                <h2>Home Energy Monitoring Controller</h2>
+                            </div>
+                            <div class="panel-body">
+                                <p>A VHDL project to monitor and control electrical appliances based on various settings set by the user and magnitude comparator</p>
+                            </div>
+                            <div class="panel-footer">
+                                <a href="#" class="btn btn-primary">Link to GitHub Project</a>
+                            </div>  
+                        </div>
+                    </div>
+                    <br> <br>
+                    <div class="row">
+                        <div class="panel panel-primary text-center">
+                            <div class="panel-heading">
+                                <h2>Target Chaser</h2>
+                            </div>
+                            <div class="panel-body">
+                                <p>A Moore State Machine that chases a target number set by the user</p>
+                            </div>
+                            <div class="panel-footer">
+                                <a href="#" class="btn btn-primary">Link to GitHub Project</a>
+                            </div>  
+                        </div>
+                    </div>
+                    <br> <br>
+                    <div class="row">
+                        <div class="panel panel-primary text-center">
+                            <div class="panel-heading">
+                                <h2>Flood Sensor Circuit</h2>
+                            </div>
+                            <div class="panel-body">
+                                <p>Prototyping a flood sensor circuit on a breadboard and designing a PCB for the circuit</p>
+                            </div>
+                            <div class="panel-footer">
+                                <a href="#" class="btn btn-primary"onclick="openModal();currentSlide(1)">Link to Slideshow</a>
+                            </div>  
+                        </div>
+                    </div>
+                    <br> <br>
+                    <div class="row">
+                        <div class="panel panel-primary text-center">
+                            <div class="panel-heading">
+                                <h2>IR Remote</h2>
+                            </div>
+                            <div class="panel-body">
+                                <p>Using a FPGA and an external circuit involving IR sensor, IR LED and ADC to simulate a televison remote </p>
+                            </div>
+                            <div class="panel-footer">
+                                <a href="#" class="btn btn-primary disabled">Under Development</a>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+                <div id="Software" class="tab-pane fade">
+                    <div class="row">
+                        <div class="panel panel-primary text-center">
+                            <div class="panel-heading">
+                                <h2>Equation Solver</h2>
+                            </div>
+                            <div class="panel-body">
+                                <p>A C++ program that solves a system of equations with three variables using Crammer's rule</p>
+                            </div>
+                            <div class="panel-footer">
+                                <a href="#" class="btn btn-primary">Link to GitHub Project</a>
+                            </div>  
+                        </div>
+                    </div>
+                    <br> <br>
+                    <div class="row">
+                        <div class="panel panel-primary text-center">
+                            <div class="panel-heading">
+                                <h2>Leap Mouse</h2>
+                            </div>
+                            <div class="panel-body">
+                                <p>A Python project that imitates the functionality of a mouse using hand gestures and utilizing Leap Motion Controller </p>
+                            </div>
+                            <div class="panel-footer">
+                                <a href="#" class="btn btn-primary">Link to GitHub Project</a>
+                            </div>  
+                        </div>
+                    </div>
+                    <br> <br>
+                    <div class="row">
+                        <div class="panel panel-primary text-center">
+                            <div class="panel-heading">
+                                <h2>2048</h2>
+                            </div>
+                            <div class="panel-body">
+                                <p>A take on the famous 2048 mobile game using Java</p>
+                            </div>
+                            <div class="panel-footer">
+                                <a href="#" class="btn btn-primary">Link to GitHub Project</a>
+                            </div>  
+                        </div>
+                    </div>
+                    <br> <br>
+                    <div class="row">
+                        <div class="panel panel-primary text-center">
+                            <div class="panel-heading">
+                                <h2>Webscraper</h2>
+                            </div>
+                            <div class="panel-body">
+                                <p>A script that gathers a list of movies currenly playing nearby based off of genre and ratings; using Python and Selenium</p>
+                            </div>
+                            <div class="panel-footer">
+                                <a href="#" class="btn btn-primary">Link to GitHub Project</a>
+                            </div>  
+                        </div>
+                    </div>
+                    <br> <br>
+                    <div class="row">
+                            <div class="panel panel-primary text-center">
+                                <div class="panel-heading">
+                                    <h2>Mattermost</h2>
+                                </div>
+                                <div class="panel-body">
+                                    <p>A collection of scripts interacting with Mattermost API to create new teams, adding members, conducting daily standups and much more using Python and Docker containers</p>
+                                </div>
+                                <div class="panel-footer">
+                                    <a href="#" class="btn btn-primary" data-toggle="modal" onclick="openAD();">Link to GitHub Project</a>
+                                </div>  
+                            </div>
+                    </div>
+                    <br> <br>
+                    <div class="row">
+                        <div class="panel panel-primary text-center">
+                            <div class="panel-heading">
+                                <h2>Jenkins</h2>
+                            </div>
+                            <div class="panel-body">
+                                <p>A collection of Groovy scrips defining pipelines for Jenkins using Artifactory, SonarQube, MSBuild and GitLab plugins</p>
+                            </div>
+                            <div class="panel-footer">
+                                <a data-toggle="modal" href="#" class="btn btn-primary" onclick="openAD();">Link to GitHub Project</a>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
             </div>
-            <br>
 
-            <div class="row">
-                <div class="panel panel-primary text-center">
-                    <div class="panel-heading">
-                        <h2>Prime Number Detection</h2>
-                    </div>
-                    <div class="panel-body">
-                        <p>A VHDL component to detect 8 bit prime numbers. It uses the Miller Rabin Primality test using components from Finite Field Arithmeic.</p>
-                    </div>
-                    <div class="panel-footer">
-                        <a href="#" class="btn btn-primary">Link to GitHub Project</a>
-                    </div>  
-                </div>
-            </div>
-            <br> <br>
-            <div class="row">
-                <div class="panel panel-primary text-center">
-                    <div class="panel-heading">
-                        <h2>Finite Field Arithmetic</h2>
-                    </div>
-                    <div class="panel-body">
-                        <p>A VHDL component to perform modular multplication and exponentiation. It uses a Wallace Tree Multiplier and reduction and mod function from math library.</p>
-                    </div>
-                    <div class="panel-footer">
-                        <a href="#" class="btn btn-primary">Link to GitHub Project</a>
-                    </div>  
-                </div>
-            </div>
-            <br> <br>
-            <div class="row">
-                <div class="panel panel-primary text-center">
-                    <div class="panel-heading">
-                        <h2>RSA Engine</h2>
-                    </div>
-                    <div class="panel-body">
-                        <p>An 8-bit RSA engine encryptor and decryptor</p>
-                    </div>
-                    <div class="panel-footer">
-                        <a href="#" class="btn btn-primary">Link to GitHub Project</a>
-                    </div>  
-                </div>
-            </div>
-            <br> <br>
-            <div class="row">
-                <div class="panel panel-primary text-center">
-                    <div class="panel-heading">
-                        <h2>Traffic Light Controller</h2>
-                    </div>
-                    <div class="panel-body">
-                        <p>A Moore State Machine modeling traffic lights at an intersection using multiple clock networks and input sensors</p>
-                    </div>
-                    <div class="panel-footer">
-                        <a href="#" class="btn btn-primary">Link to GitHub Project</a>
-                    </div>  
-                </div>
-            </div>
-            <br> <br>
-            <div class="row">
-                <div class="panel panel-primary text-center">
-                    <div class="panel-heading">
-                        <h2>Home Energy Monitoring Controller</h2>
-                    </div>
-                    <div class="panel-body">
-                        <p>A VHDL project to monitor and control electrical appliances based on various settings set by the user and magnitude comparator</p>
-                    </div>
-                    <div class="panel-footer">
-                        <a href="#" class="btn btn-primary">Link to GitHub Project</a>
-                    </div>  
-                </div>
-            </div>
-            <br> <br>
-            <div class="row">
-                <div class="panel panel-primary text-center">
-                    <div class="panel-heading">
-                        <h2>Target Chaser</h2>
-                    </div>
-                    <div class="panel-body">
-                        <p>A Moore State Machine that chases a target number set by the user</p>
-                    </div>
-                    <div class="panel-footer">
-                        <a href="#" class="btn btn-primary">Link to GitHub Project</a>
-                    </div>  
-                </div>
-            </div>
-            <br> <br>
-            <div class="row">
-                <div class="panel panel-primary text-center">
-                    <div class="panel-heading">
-                        <h2>Flood Sensor Circuit</h2>
-                    </div>
-                    <div class="panel-body">
-                        <p>Prototyping a flood sensor circuit on a breadboard and designing a PCB for the circuit</p>
-                    </div>
-                    <div class="panel-footer">
-                        <a href="#" class="btn btn-primary"onclick="openModal();currentSlide(1)">Link to Slideshow</a>
-                    </div>  
-                </div>
-            </div>
-            <br> <br>
-            <div class="row">
-                <div class="panel panel-primary text-center">
-                    <div class="panel-heading">
-                        <h2>IR Remote</h2>
-                    </div>
-                    <div class="panel-body">
-                        <p>Using a FPGA and an external circuit involving IR sensor, IR LED and ADC to simulate a televison remote </p>
-                    </div>
-                    <div class="panel-footer">
-                        <a href="#" class="btn btn-primary disabled">Under Development</a>
-                    </div>  
-                </div>
-            </div>
         </div>
 
-        <br><br><br>
-
-        <div class="container">
-            <div class="row text-center">
-                <h1>Software</h1>
-            </div>
-            <br>
-            <div class="row">
-                <div class="panel panel-primary text-center">
-                    <div class="panel-heading">
-                        <h2>Equation Solver</h2>
-                    </div>
-                    <div class="panel-body">
-                        <p>A C++ program that solves a system of equations with three variables using Crammer's rule</p>
-                    </div>
-                    <div class="panel-footer">
-                        <a href="#" class="btn btn-primary">Link to GitHub Project</a>
-                    </div>  
-                </div>
-            </div>
-            <br> <br>
-            <div class="row">
-                <div class="panel panel-primary text-center">
-                    <div class="panel-heading">
-                        <h2>Leap Mouse</h2>
-                    </div>
-                    <div class="panel-body">
-                        <p>A Python project that imitates the functionality of a mouse using hand gestures and utilizing Leap Motion Controller </p>
-                    </div>
-                    <div class="panel-footer">
-                        <a href="#" class="btn btn-primary">Link to GitHub Project</a>
-                    </div>  
-                </div>
-            </div>
-            <br> <br>
-            <div class="row">
-                <div class="panel panel-primary text-center">
-                    <div class="panel-heading">
-                        <h2>2048</h2>
-                    </div>
-                    <div class="panel-body">
-                        <p>A take on the famous 2048 mobile game using Java</p>
-                    </div>
-                    <div class="panel-footer">
-                        <a href="#" class="btn btn-primary">Link to GitHub Project</a>
-                    </div>  
-                </div>
-            </div>
-            <br> <br>
-            <div class="row">
-                <div class="panel panel-primary text-center">
-                    <div class="panel-heading">
-                        <h2>Webscraper</h2>
-                    </div>
-                    <div class="panel-body">
-                        <p>A script that gathers a list of movies currenly playing nearby based off of genre and ratings; using Python and Selenium</p>
-                    </div>
-                    <div class="panel-footer">
-                        <a href="#" class="btn btn-primary">Link to GitHub Project</a>
-                    </div>  
-                </div>
-            </div>
-            <br> <br>
-            <div class="row">
-                    <div class="panel panel-primary text-center">
-                        <div class="panel-heading">
-                            <h2>Mattermost</h2>
-                        </div>
-                        <div class="panel-body">
-                            <p>A collection of scripts interacting with Mattermost API to create new teams, adding members, conducting daily standups and much more using Python and Docker containers</p>
-                        </div>
-                        <div class="panel-footer">
-                            <a href="#" class="btn btn-primary" data-toggle="modal" onclick="openAD();">Link to GitHub Project</a>
-                        </div>  
-                    </div>
-            </div>
-            <br> <br>
-            <div class="row">
-                <div class="panel panel-primary text-center">
-                    <div class="panel-heading">
-                        <h2>Jenkins</h2>
-                    </div>
-                    <div class="panel-body">
-                        <p>A collection of Groovy scrips defining pipelines for Jenkins using Artifactory, SonarQube, MSBuild and GitLab plugins</p>
-                    </div>
-                    <div class="panel-footer">
-                        <a data-toggle="modal" href="#" class="btn btn-primary" onclick="openAD();">Link to GitHub Project</a>
-                    </div>  
-                </div>
-            </div>
-        </div>
+        
         
         <!-- Pop-up slideshow for Flood Sensor -->
         <div id="myModal" class="modal">
