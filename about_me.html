@@ -25,9 +25,6 @@
             }
 
             .tab-content{
-                border-left: 1px solid #ddd;
-                border-right: 1px solid #ddd;
-                border-bottom: 1px solid #ddd;
                 padding: 10px
             }
             
@@ -36,6 +33,17 @@
                 padding-right: 30px
                 
             }
+            .panel{
+                background-color: rgba(22, 22, 54, 0.502);
+                border: 1px solid transparent; 
+            }
+            .panel-footer.panel-custom {
+                background: rgba(22, 22, 54, 0.502);
+                color: white;
+                border: 1px solid transparent;
+            }
+
+            .center-pills { display: inline-block; }
 
         </style>
 
@@ -59,7 +67,7 @@
                     <ul class="nav navbar-nav">
                         <li><a href="index.html">Home</a></li>
                         <li class="active"><a href="about_me.html">About Me</a></li>
-                        <li><a href="recent_courses.html">Recect Courses</a></li> 
+                        <li><a href="recent_courses.html">Recent Courses</a></li> 
                         <li><a href="personal_projects.html">Personal Projects</a></li>
                         <li><a href="contact_me.html">Contact Me</a></li> 
                     </ul>
@@ -124,126 +132,124 @@
 
         <br>
 
-        <section id="WorkExpierience" class="text-center">
-            <h2 class="text-center">
-                <b>Previous Expierinece</b>
-            </h2>
+        <div class="container text-center">
+            <ul class="nav nav-pills center-pills">
+                <li class="active"><a data-toggle="pill" href="#expierience"><h4>Previous Expierience</h4></a></li>
+                <li><a data-toggle="pill" href="#education"><h4>Education</h4></a></li>
+                <li><a data-toggle="pill" href="#extra"><h4>Extracurriculars</h4></a></li>
+            </ul>
+            <div class="tab-content">
+                <div id="expierience" class="tab-pane fade in active">
 
-            <div class="row">
-                <div class="col">
-                    <h3>
-                        <b>Application Developer - Manulife Financial</b>
-                    </h3>
-                </div>
-                <div class="col">
-                    <h3>
-                        Sept 2017 - Dec 2017
-                    </h3>
-                </div>
-                <br>
-                <font size="4">
-                    <div class="col">
-                        <li>Created a Mattermost bot to run daily scrum meetings for various teams using Python and Docker</li>
-                        <li>Worked on creating a Mattermsot plugin for Concourse CI using Bash scripting</li>
-                        <li>Converted previous Jenkins jobs to Groovy based pipelines</li>
-                        <li>Developed a general Jenkinsfile template to be used for .NET and Java builds</li>
-                        <li>Set-up Jenkins pieplines for new projects</li>
+                    <div class="row">
+                        <div class="panel panel-primary text-center">
+                            <div class="panel-heading">
+                                <h3><b>Application Developer - Manulife Financial</b></h3>
+                            </div>
+                            <div class="panel-body">
+                                <p>Created a Mattermost bot to run daily scrum meetings for various teams using Python and Docker</p>
+                                <p>Worked on creating a Mattermsot plugin for Concourse CI using Bash scripting</p>
+                                <p>Converted previous Jenkins jobs to Groovy based pipelines</p>
+                                <p>Developed a general Jenkinsfile template to be used for .NET and Java builds</p>
+                                <p>Set-up Jenkins pieplines for new projects</p>
+                            </div>
+                            <div class="panel-footer panel-custom">
+                                <h3>
+                                    Sept 2017 - Dec 2017
+                                </h3>
+                            </div>
+                        </div>
                     </div>
-                </font>
-            </div>
 
-            <br>
+                    <br><br>
 
-            <div class="row">
-                <div class="col">
-                    <h3>
-                        <b>IT Intern - Purolator Inc</b>
-                    </h3>
-                </div>
-                <div class="col">
-                    <h3>
-                        Jan 2017 - Apr 2017
-                    </h3>
-                </div>
-                <br>
-                <font size="4">
-                    <div class="col">
-                        <li>Created various MS Office based tools using VBA</li>
-                        <li>Developed a client-auditor matching program by implementing a solution the knapsack problem</li>
-                        <li>Worked in collaboration with multiple teams to develop Credit Assessment Tool</li>
-                        <li>Liased with IT department to troubleshoot in-house tools</li>
-                        <li>Worked with SAP and BEx Analyzer to make payment matching process more efficient</li>
-                        <li>Created a script to track and report email response times for the Accounts Receivable Department</li>
-                        <li>Developed user guides for existing and new tools</li>
+                    <div class="row">
+                        <div class="panel panel-primary text-center">
+                            <div class="panel-heading">
+                                <h3><b>Information Technology Intern - Purolator Inc</b></h3>
+                            </div>
+                            <div class="panel-body">
+                                <p>Created various MS Office based tools using VBA</p>
+                                <p>Developed a client-auditor matching program by implementing a solution the knapsack problem</p>
+                                <p>Worked in collaboration with multiple teams to develop Credit Assessment Tool</p>
+                                <p>Liased with IT department to troubleshoot in-house tools</p>
+                                <p>Worked with SAP and BEx Analyzer to make payment matching process more efficient</p>
+                                <p>Created a script to track and report email response times for the Accounts Receivable Department</p>
+                                <p>Developed user guides for existing and new tools</p>
+                            </div>
+                            <div class="panel-footer panel-custom">
+                                <h3>
+                                    Jan 2017 - Apr 2017
+                                </h3>
+                            </div>
+                        </div>
                     </div>
-                </font>
-            </div>
 
-            <br>
-
-            <div class="row">
-                <div class="col">
-                    <h3>
-                        <b>H&S Intern - Health and Safety Consultants</b>
-                    </h3>
-                </div>
-                <div class="col">
-                    <h3>
-                        Aug 2015 - Aug 2016
-                    </h3>
-                </div>
-                <br>
-                <font size="4">
-                    <div class="col">
-                        <li>Instructed multiple trainings on First Aid and Disaster Risk Management to NGO's and general public</li>
-                        <li>Established and maintained the benificiaries' MS Access database</li>
-                        <li>Redesigned organization’s IEC material, wrote technical proposals and end-of-project reports</li>
-                        <li>Contacted other organizations regarding the services offered</li>
-                        <li>Revamped the organization’s social media presenceby posing regular updates of events and various trainings</li>
+                    <br><br>
+                    
+                    <div class="row">
+                        <div class="panel panel-primary text-center">
+                            <div class="panel-heading">
+                                <h3><b>H&S Intern - Health and Safety Consultants</b></h3>
+                            </div>
+                            <div class="panel-body">
+                                <p>Instructed multiple trainings on First Aid and Disaster Risk Management to NGO's and general public</p>
+                                <p>Established and maintained the benificiaries' MS Access database</p>
+                                <p>Redesigned organization’s IEC material, wrote technical proposals and end-of-project reports</p>
+                                <p>Contacted other organizations regarding the services offered</p>
+                                <p>Revamped the organization’s social media presenceby posing regular updates of events and various trainings</p>
+                            </div>
+                            <div class="panel-footer panel-custom">
+                                <h3>
+                                    Aug 2015 - Aug 2016
+                                </h3>
+                            </div>
+                        </div>
                     </div>
-                </font>
-            </div>
+                </div>
 
-        </section>
+                <div id="education" class="tab-pane fade">
+                    <div class="row">
+                        <div class="panel panel-primary text-center">
+                            <div class="panel-heading">
+                                <h3><b>University of Waterloo</b></h3>
+                            </div>
+                            <div class="panel-body">
+                                <h4>
+                                    <b>Honours Electrical Engineeering</b>
+                                </h4>
+                               <p>Candidate for Bachelors of Applied Science</p>
+
+                               <p>
+                                   Relevant courses include Electronic Circuits, Algorithms
+                                   & Data Structures, Digital Computers, Linear Algebra amd
+                                   Advanced Calculus
+                               </p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="extra" class="tab-pane fade">
+                    <div class="row">
+                        <div class="panel panel-primary text-center">
+                            <div class="panel-body">
+                                <p>Part of Engineering Society as POETS Manager, Interview Skills Director and Exam Bank Director</p>
+                                <p>Involved in Engineering Orientation Week as a front line leader</p>
+                                <p>Like to play intermural soccer (7v7 and Futsal) during academic terms</p>
+                                <p>Particpated in multiple hackathons</p>
+                                <p>Avid reader of political thrillers and follow Formula 1</p>
+                            </div>
+                        </div>        
+                    </div>
+
+                </div>
+            </div>
+        </div>
 
         <br>
-
-        <section id="Education" class="text-center">
-            <h2>
-                <b>Education</b>
-            </h2>
-
-            <div class="row">
-                <div class="col">
-                    <h3>
-                        <b>University of Waterloo</b>
-                    </h3>
-                </div>
-                <div class="col">
-                    <h3>Electrical Engineering</h3>
-                </div>
-            </div>
-
-        </section>
-        <br>
-        <section id="Extracurriculars" class="text-center">
-            <h2>
-                <b>Extracurriculars</b>
-            </h2>
-
-            <div class="row">
-                <div class="col">
-                    <font size="4">
-                        <li>Part of Engineering Society as POETS Manager, Interview Skills Director and Exam Bank Director</li>
-                        <li>Involved in Orientation Week as a front line leader</li>
-                        <li>Like to play intermural soccer (7v7 and Futsal) during academic terms</li>
-                        <li>Particpated in multiple hackathons</li>
-                        <li>Like to read political thrillers and follow Formula 1 in my free time</li>
-                    </font>
-                </div>
-            </div>
-        </section>
-        <br>
+        <hr>
         <section id="Resume" class="text-center">
             <h2>
                 <b>Resume</b>
