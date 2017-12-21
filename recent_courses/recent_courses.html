@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Nosherwan Ahmed</title>
+        
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+        <style>
+            
+            .jumbotron{
+                background-color: rgba(22, 22, 54, 0.502);
+                color:white;
+            }
+
+            body {
+                padding-top: 50px;
+                background-color: rgb(35, 61, 70);
+                color: white;
+            }
+
+            .tab-content{
+                border-left: 1px solid #ddd;
+                border-right: 1px solid #ddd;
+                border-bottom: 1px solid #ddd;
+                padding: 10px
+            }
+            
+            section{
+                padding-left: 30px;
+                padding-right: 30px
+                
+            }
+
+        </style>
+    </head>
+
+    <body>
+
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span> 
+                    </button>
+
+                    <a class="navbar-brand" href="/">Nosherwan Ahmed</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/about_me">About Me</a></li>
+                        <li class="active"><a href="/recent_courses">Recent Courses</a></li> 
+                        <li><a href="/personal_projects">Personal Projects</a></li>
+                        <li><a href="/contact_me">Contact Me</a></li> 
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container">
+            <div class="jumbotron text-center"> 
+                <h1>Recent Courses</h1>
+                <p>A brief description of the courses taken @ UWaterloo </p>
+            </div>
+
+        </div>
+
+        <br>
+
+        <div class="container" id="main">
+            <section id="current" class="text-center">
+
+                <h2>
+                    <b>Current / Upcoming</b>
+                </h2>
+                
+                <br>
+
+                <h3>
+                    <b>Term: 2A - Winter 2018</b>
+                </h3>
+
+                <br>
+                
+                <div class="">
+                    <table id="winter2018" class="table table-condensed">
+                        <thead>
+                            <th class="text-center">Course Code</th>
+                            <th class="text-center">Course Title</th>
+                            <th class="text-center">Course Description</th>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>ECE 200A</td>
+                                <td>Electrical and Computer Engineering Practice</td>
+                                <td>
+                                    Areas of research and professional practice in Electrical and Computer Engineering. 
+                                    Exposure to concepts from other Engineering disciplines. Support material for the 
+                                    academic term, co-operative education, and professional or career development.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>ECE 204A</td>
+                                <td>Numerical Methods 1</td>
+                                <td>
+                                    Application of computational methods to engineering problems. Number systems,
+                                    errors and error propagation. Roots of nonlinear equations. Introduction to 
+                                    numerical linear algebra. Interpolation and numerical integration.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>ECE 205</td>
+                                <td>Advanced Calculus 1</td>
+                                <td>
+                                    Fourier series. Ordinary differential equations. Laplace transform. 
+                                    Applications to linear electrical systems.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>ECE 222</td>
+                                <td>Digital Computers</td>
+                                <td>
+                                    Computer organization. Memory units, control units, I/O operations. 
+                                    Assembly language programming, translation and loading. Arithmetic logic units. 
+                                    Computer case studies.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>ECE 240</td>
+                                <td>Electronic Circuits 1</td>
+                                <td>
+                                    Introduction to electronic signal processing; operational amplifier circuits; 
+                                    diode device and circuits; MOS and bipolar amplifier biasing networks; 
+                                    load-line analysis; diode, MOS and bipolar small-signal equivalent circuits; 
+                                    single-stage small-signal MOS and bipolar amplifiers; transistor switches.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>ECE 250</td>
+                                <td>Algorithms and Data Structures</td>
+                                <td>
+                                    Data structures, abstract data types, recursive algorithms, algorithm analysis,
+                                    sorting and searching, and problem-solving strategies.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>ECE 290</td>
+                                <td>Engineering Profession, Ethics, and Law</td>
+                                <td>
+                                    An introduction to engineering law and ethics: ethical theories, code of 
+                                    ethics and misconduct, whistle blowing, conflict of interest, health and 
+                                    safety, diversity, workplace equity and sexual harassment, environment, 
+                                    Charter of Rights and Freedoms, torts, contract, and intellectual property. 
+                                    Continuation of studies of professional practice: history, Professional 
+                                    Engineers Act and Regulation, licensing, discipline and enforcement.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>MATH 215</td>
+                                <td>Linear Algebra for Engineering</td>
+                                <td>
+                                    Systems of linear equations; their representation with matrices and vectors;
+                                    their generalization to linear transformations on abstract vector spaces; and 
+                                    the description of these linear transformations through quantitative characteristics 
+                                    such as the determinant, the characteristic polynomial, eigenvalues and eigenvectors, 
+                                    the rank, and singular values.
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <br>
+
+            <section id="previous" class="text-center">    
+                <h2>
+                    <b>Previous</b>
+                </h2>
+                <br>
+                <h3>
+                    <b>Term: 1B - Spring 2017</b>
+                </h3>
+                <br>
+                <div class="">
+                    <table id="spring2017" class="table table-condensed">
+                        <thead>
+                            <th class="text-center">Course Code</th>
+                            <th class="text-center">Course Title</th>
+                            <th class="text-center">Course Description</th>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>ECE 100B</td>
+                                <td>Electrical and Computer Engineering Practice</td>
+                                <td>
+                                    Areas of research and professional practice in Electrical and Computer Engineering. 
+                                    Exposure to concepts from other Engineering disciplines. Support material for the 
+                                    academic term, co-operative education, and professional or career development.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>ECE 103</td>
+                                <td>Discrete Mathematics</td>
+                                <td>
+                                    Propositional logic, predicate logic, set theory, finite automata, 
+                                    temporal logic. 
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>ECE 106</td>
+                                <td>Physics of Electrical Engineering 2</td>
+                                <td>
+                                    Electrostatics; electric field, flux, Gauss's Law, potential and potential energy.
+                                    Capacitors; Dielectric, capacitance, electric energy storage, charging/discharging. 
+                                    Resistors; charge flow, current, resistance, Kirchhoff's voltage and current laws. 
+                                    Magnetostatic; magnetic force, magnetic fields, Ampere's Law. Inductors; magnetic flux, 
+                                    inductance, magnetic materials, magnetic energy storage. Time-Varying Fields; Faraday's Law, 
+                                    mutual inductance, simple motors and generators.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>ECE 124</td>
+                                <td>Digital Circuits and Systems</td>
+                                <td>
+                                    Number systems and Boolean arithmetic. Boolean algebra and simplification of Boolean functions.
+                                    Combinational circuits. Sequential circuits; design and implementation. Hardware description 
+                                    languages. Timing analysis. Implementation technologies.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>ECE 155</td>
+                                <td>Engineering Design with Embedded Systems</td>
+                                <td>
+                                    Introduction to embedded systems, review of engineering design and analysis principles, software 
+                                    development life cycle, integrated development environments, use of software requirements and 
+                                    specifications, unified modelling language and documentation, event handling, simulation, project 
+                                    management, project scheduling, testing, verification, and maintenance considerations.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>MATH 119</td>
+                                <td>Calculus 2 for Engineering</td>
+                                <td>
+                                    Elementary approximation methods: interpolation; Taylor polynomials and remainder; 
+                                    Newton's method, Landau order symbol, applications. Infinite series: Taylor series 
+                                    and Taylor's Remainder Theorem, geometric series, convergence test, power series, 
+                                    applications. Functions of several variables: partial derivatives, linear approximation 
+                                    and differential, gradient and directional derivative, optimization and Lagrange multipliers. 
+                                    Vector-valued functions: parametric representation of curves, tangent and normal vectors, 
+                                    line integrals and applications.
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <br>
+
+                <h3>
+                    <b>Term: 1A - Fall 2016</b>
+                </h3>
+                <br>
+                <div class="">
+                    <table id="fall2016" class="table table-condensed">
+                        <thead>
+                            <th class="text-center">Course Code</th>
+                            <th class="text-center">Course Title</th>
+                            <th class="text-center">Course Description</th>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>CHE 102</td>
+                                <td>Chemistry for Engineers</td>
+                                <td>
+                                    Chemical principles with applications in engineering. Stoichiometric calculations, properties of 
+                                    gases, properties of liquids and solutions, gas phase chemical equilibrium, ionic equilibrium in 
+                                    aqueous solution, oxidation-reduction reactions, chemical kinetics.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>ECE 100A</td>
+                                <td>Electrical and Computer Engineering Practice</td>
+                                <td>
+                                    Areas of research and professional practice in Electrical and Computer Engineering, including 
+                                    the engineer's role in protecting public safety. Exposure to concepts from other Engineering disciplines. 
+                                    Support material for the academic term, co-operative education, and professional or career development. 
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>ECE 105</td>
+                                <td>Physics of Electrical Engineering 1</td>
+                                <td>
+                                    Forces in nature and Newton's laws, Dynamics and circular motion, Work, Energy and conservation of energy. 
+                                    Linear Momentum and linear Impulse, Rotational Dynamics. Oscillations; Simple Harmonic Motion. Wave motion; 
+                                    Traveling waves and standing waves. Thermal Physics; Temperature, Thermal energy and Specific heat, Ideal gas 
+                                    heat engines and Refrigerators.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>ECE 140</td>
+                                <td>Linear Circuits</td>
+                                <td>
+                                    Analysis of linear circuits. Voltage, current, resistance, capacitance, inductance, voltage source, current source,
+                                    dependent sources, Ohm's Law, Kirchoff's Law, nodal analysis, mesh analysis, circuit transformations, operational 
+                                    amplifier circuits, time response, sinusoidal steady-state response. Preparing for, conducting, and reporting of 
+                                    laboratory experiments. 
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>ECE 150</td>
+                                <td>Fundamentals of Programming</td>
+                                <td>
+                                    Software design process in a high-level programming environment. Programming fundamentals, language syntax, simple 
+                                    data types, control constructs, functions, parameter passing, recursion, classes, arrays and lists, list traversals, 
+                                    introduction to searching and sorting algorithms, basic object-oriented design, polymorphism and inheritance, simple 
+                                    testing and debugging strategies, pointers and references, basic memory management.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>MATH 117</td>
+                                <td>Calculus 1 for Engineering</td>
+                                <td>
+                                    Functions of engineering importance; review of polynomial, exponential, and logarithmic functions; trigonometric 
+                                    functions and identities. Inverse functions (logarithmic and trigonometric). Limits and continuity. Derivatives, 
+                                    rules of differentiation; derivatives of elementary functions. Applications of the derivative, max-min problems, 
+                                    Mean Value Theorem. Antiderivatives, the Riemann definite integral, Fundamental Theorems. Methods of integration, 
+                                    approximation, applications, improper integrals
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </div>
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </body>
+</html>

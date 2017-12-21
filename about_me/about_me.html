@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <title>Nosherwan Ahmed</title>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+        <style>
+            
+            .jumbotron{
+                background-color: #2e2d88;
+                color:white;
+            }
+
+            body {
+                padding-top: 50px;
+                background-color: rgb(35, 61, 70);
+                color: white;
+            }
+
+            .tab-content{
+                padding: 10px
+            }
+            
+            section{
+                padding-left: 30px;
+                padding-right: 30px
+                
+            }
+            .panel{
+                background-color: rgba(22, 22, 54, 0.502);
+                border: 1px solid transparent; 
+            }
+            .panel-footer.panel-custom {
+                background: rgba(22, 22, 54, 0.502);
+                color: white;
+                border: 1px solid transparent;
+            }
+
+            .center-pills { display: inline-block; }
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span> 
+                    </button>
+
+                    <a class="navbar-brand" href="/">Nosherwan Ahmed</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="/">Home</a></li>
+                        <li class="active"><a href="/about_me">About Me</a></li>
+                        <li><a href="/recent_courses">Recent Courses</a></li> 
+                        <li><a href="/personal_projects">Personal Projects</a></li>
+                        <li><a href="/contact_me">Contact Me</a></li> 
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <br><br>
+
+        <div class="container">
+            <h1 class="text-center">
+                <b>Nosherwan Ahmed</b>
+            </h1>
+
+            <div class="row">
+                <div class="col text-center">
+                    <p>
+                        ** ADD PERSONAL PITCH HERE **
+                    </p>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <img class="img-rounded" src="img/Me.jpg" alt="" style="height:70%; width:80%">
+            </div>
+
+        </div>
+        <br>
+        <section class="row text-center" id="skills"
+            style="background:transparent url('img/new.jpg') no-repeat center center /cover">
+            
+            <h2 class="text-center">
+                <b>Skills</b>
+            </h2>
+            <font size="3">
+                <li>Expierienced in Hardware/Software Development and Project Management</li>
+                <li>Exceptional communication, problem-solving, organizational skills</li>
+                <li>Team Leader and Team Player</li>
+                <li>Enthusiastic to learn new skills</li>
+
+                <div class="col col-lg-6 col-md-6 col-sm-6 col-xs-6 text-center">
+                    <h3>
+                    Software
+                    </h3>
+                    <li>Proficient in several programming languages including <b>C++, Java, Python, Groovy, VBA</b></li><br>
+                    <li>Well versed in Software Development Life Cycle and its various methodologies <b>(Agile, Waterfall, Spiral)</b></li><br>
+                    <li>Expierienced in the use of software development tools <b>(Visual Studio, Android Studio, PyCharm, Git, Subversion)</b></li><br>
+                    <li>Skilled in the use of CI/CD system and tools like <b>Jenkins, Concourse CI, Artifactory, Docker, PCF, SonarCube and Mattermost</b></li><br>
+                    
+                </div>
+                <div class="col col-lg-6 col-md-6 col-sm-6 col-xs-6 text-center">
+                    <h3>
+                        Hardware
+                    </h3>
+                    <li>Expierienced in Digital and Embedded System Design on <b>FPGAs</b> and associated tools like <b>Quartus Prime and ModelSim</b></li><br>
+                    <li>Proficient in Hardware Description Languages <b>(VHDL and Verilog)</b></li><br>
+                    <li>Skilled in PCB and schematic design and associated tools like <b>KiCAD</b></li><br>
+                    <li>Past expierience with building electrical circuits using breadboards and laboratory equipment <b>(Oscilloscopes, Power Supplies)</b></li><br>
+                </div>
+            </font>
+        </section>
+
+        <br>
+
+        <div class="container text-center">
+            <ul class="nav nav-pills center-pills">
+                <li class="active"><a data-toggle="pill" href="#expierience"><h4>Previous Expierience</h4></a></li>
+                <li><a data-toggle="pill" href="#education"><h4>Education</h4></a></li>
+                <li><a data-toggle="pill" href="#extra"><h4>Extracurriculars</h4></a></li>
+            </ul>
+            <div class="tab-content">
+                <div id="expierience" class="tab-pane fade in active">
+
+                    <div class="row">
+                        <div class="panel panel-primary text-center">
+                            <div class="panel-heading">
+                                <h3><b>Application Developer - Manulife Financial</b></h3>
+                            </div>
+                            <div class="panel-body">
+                                <p>Created a Mattermost bot to run daily scrum meetings for various teams using Python and Docker</p>
+                                <p>Worked on creating a Mattermsot plugin for Concourse CI using Bash scripting</p>
+                                <p>Converted previous Jenkins jobs to Groovy based pipelines</p>
+                                <p>Developed a general Jenkinsfile template to be used for .NET and Java builds</p>
+                                <p>Set-up Jenkins pieplines for new projects</p>
+                            </div>
+                            <div class="panel-footer panel-custom">
+                                <h3>
+                                    Sept 2017 - Dec 2017
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <br><br>
+
+                    <div class="row">
+                        <div class="panel panel-primary text-center">
+                            <div class="panel-heading">
+                                <h3><b>Information Technology Intern - Purolator Inc</b></h3>
+                            </div>
+                            <div class="panel-body">
+                                <p>Created various MS Office based tools using VBA</p>
+                                <p>Developed a client-auditor matching program by implementing a solution the knapsack problem</p>
+                                <p>Worked in collaboration with multiple teams to develop Credit Assessment Tool</p>
+                                <p>Liased with IT department to troubleshoot in-house tools</p>
+                                <p>Worked with SAP and BEx Analyzer to make payment matching process more efficient</p>
+                                <p>Created a script to track and report email response times for the Accounts Receivable Department</p>
+                                <p>Developed user guides for existing and new tools</p>
+                            </div>
+                            <div class="panel-footer panel-custom">
+                                <h3>
+                                    Jan 2017 - Apr 2017
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <br><br>
+                    
+                    <div class="row">
+                        <div class="panel panel-primary text-center">
+                            <div class="panel-heading">
+                                <h3><b>H&S Intern - Health and Safety Consultants</b></h3>
+                            </div>
+                            <div class="panel-body">
+                                <p>Instructed multiple trainings on First Aid and Disaster Risk Management to NGO's and general public</p>
+                                <p>Established and maintained the benificiaries' MS Access database</p>
+                                <p>Redesigned organization’s IEC material, wrote technical proposals and end-of-project reports</p>
+                                <p>Contacted other organizations regarding the services offered</p>
+                                <p>Revamped the organization’s social media presenceby posing regular updates of events and various trainings</p>
+                            </div>
+                            <div class="panel-footer panel-custom">
+                                <h3>
+                                    Aug 2015 - Aug 2016
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="education" class="tab-pane fade">
+                    <div class="row">
+                        <div class="panel panel-primary text-center">
+                            <div class="panel-heading">
+                                <h3><b>University of Waterloo</b></h3>
+                            </div>
+                            <div class="panel-body">
+                                <h4>
+                                    <b>Honours Electrical Engineeering</b>
+                                </h4>
+                               <p>Candidate for Bachelors of Applied Science</p>
+
+                               <p>
+                                   <a href="/recent_courses" style="color:#FFFFFF">Relevant courses</a> include Electronic Circuits, Algorithms
+                                   & Data Structures, Digital Computers, Linear Algebra amd
+                                   Advanced Calculus
+                               </p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="extra" class="tab-pane fade">
+                    <div class="row">
+                        <div class="panel panel-primary text-center">
+                            <div class="panel-body">
+                                <p>Part of Engineering Society as POETS Manager, Interview Skills Director and Exam Bank Director</p>
+                                <p>Involved in Engineering Orientation Week as a front line leader</p>
+                                <p>Like to play intermural soccer (7v7 and Futsal) during academic terms</p>
+                                <p>Particpated in multiple hackathons</p>
+                                <p>Avid reader of political thrillers and follow Formula 1</p>
+                            </div>
+                        </div>        
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <hr>
+        <section id="Resume" class="text-center">
+            <h2>
+                <b>Resume</b>
+            </h2>
+            <font size="4">
+                <a href="#" style="color:#FFFFFF">Link</a>
+            </font>
+        </section>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </body>
+</html>
